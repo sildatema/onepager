@@ -3,16 +3,14 @@
     --surface: #0f0f1a;
     --surface-2: #161625;
 
-    --primary: #8b5aff;
-    --primary-light: #b47aff;
+    --primary: #9b70ff;
+    --primary-light: #c18eff;
 
-    --text: #edeef2;
-    --muted: #676778;
-
+    --text: #f3f4f8;
+    --muted: #9b9bb0;
     --success: #3cffa0;
 
-    --border: rgba(255,255,255,0.06);
-
+    --border: rgba(255,255,255,0.10);
     --max-width: 1200px;
 }
 
@@ -26,11 +24,19 @@ html {
     scroll-behavior: smooth;
 }
 
+.button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #c18eff;
+    outline-offset: 3px;
+}
+
 body {
     background: var(--bg);
     color: var(--text);
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    font-size: 16px;
+
 }
 
 /* Background glow */
